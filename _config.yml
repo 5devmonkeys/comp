@@ -2,14 +2,14 @@
 title: Compassos - Estudio de Dança
 email: your-email@domain.com
 description: >
-baseurl: ""
-url: ""
+baseurl: "/compassos"
+url: "heirian.github.io"
 twitter_username:
 github_username:
 
 # Build settings
 markdown: kramdown
-theme: minima
+
 gems:
   - jekyll-feed
 exclude:
