@@ -9,7 +9,7 @@ function pieChart() {
 
 			var imagePos = jQuery(this).offset().top;
 			var topOfWindow = jQuery(window).scrollTop();
-			if (imagePos < topOfWindow+900) {
+			if (imagePos < topOfWindow+1) {
 
 				jQuery(this).easyPieChart({
 			        barColor: colors[count],
@@ -17,10 +17,10 @@ function pieChart() {
 					scaleColor: false,
 					scaleLength: false,
 					lineCap: 'butt',
-					lineWidth: 3,
+					lineWidth: 1,
 					size: 160,
 					rotate: 0,
-					animate: 3000,
+					animate: 1,
 					onStep: function(from, to, percent) {
 							jQuery(this.el).find('.percent').text(Math.round(percent));
 						}
@@ -278,11 +278,11 @@ jQuery(window).load(function(){
 
 	//preloader
 	jQuery(".preloaderimg").fadeOut();
-	jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
+	jQuery(".preloader").delay(0).fadeOut("slow").delay(0, function(){
 		jQuery(this).remove();
 	});
 
-	jQuery('body').delay(1000).scrollspy('refresh');
+	jQuery('body').delay(1).scrollspy('refresh');
 
 
 
