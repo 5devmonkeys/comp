@@ -8,13 +8,13 @@ jQuery(document).ready(function() {
     });
     jQuery('#mainmenu ul li').mouseover(function(){
         if(MainWindowWidth > 767) {
-            // checks if third level menu exist         
-            var subMenuExist = jQuery(this).find('ul').length;            
+            // checks if third level menu exist
+            var subMenuExist = jQuery(this).find('ul').length;
             if( subMenuExist > 0){
                 var subMenuWidth = jQuery(this).find('ul').width();
                 var subMenuOffset = jQuery(this).find('ul').parent().offset().left + subMenuWidth;
                 // if sub menu is off screen, give new position
-                if((subMenuOffset + subMenuWidth) > MainWindowWidth){                  
+                if((subMenuOffset + subMenuWidth) > MainWindowWidth){
                     var newSubMenuPosition = subMenuWidth + 0;
                     $(this).find('ul').first().css({
                         left: -newSubMenuPosition,

@@ -6,7 +6,7 @@ function pieChart() {
 		var count = 0 ;
 		var colors = ['#f36639'];
 		jQuery('.chart').each(function(){
-				
+
 			var imagePos = jQuery(this).offset().top;
 			var topOfWindow = jQuery(window).scrollTop();
 			if (imagePos < topOfWindow+900) {
@@ -80,7 +80,7 @@ jQuery(document).ready(function() {
             }
         });
     });
-	
+
 	//twitter
 	//slide tweets
 	jQuery('#tweets .twitter').bind('loaded', function(){
@@ -93,7 +93,7 @@ jQuery(document).ready(function() {
 		    avatar_size: 48,
 		    loading_text: 'loading twitter feed...',
 		    join_text: 'auto',
-		    username: 'ThemeForest', 
+		    username: 'ThemeForest',
 		    template: "{avatar}<div class=\"tweet_right\">{time}{join}<span class=\"tweet_text\">{tweet_text}</span></div>"
 		});
 	}
@@ -121,8 +121,8 @@ jQuery(document).ready(function() {
     }
 
 	//parallax
-	if (jQuery().parallax) {		
-		jQuery('#testimonials').parallax("50% 50%", 0.001);	
+	if (jQuery().parallax) {
+		jQuery('#testimonials').parallax("50% 50%", 0.001);
 		jQuery('#skills').parallax("50%", 0.01);
 		jQuery('#mail_us').parallax("50%", 0.01);
 	}
@@ -148,8 +148,8 @@ jQuery(document).ready(function() {
 	//owl carousel
 	if (jQuery().owlCarousel) {
 		jQuery("#testimonials-carousel").owlCarousel({
-	    	navigation : true,	    	
-	    	pagination : false,	    	
+	    	navigation : true,
+	    	pagination : false,
 	    	items: 1,
 	    	autoPlay:3000,
 	    	addClassActive:true,
@@ -158,14 +158,14 @@ jQuery(document).ready(function() {
 	    	itemsTablet: [768,1],
 	    	itemsMobile: [479,1]
 
-	    });	  	    
+	    });
 	    jQuery("#partners-carousel").owlCarousel({
 	    	navigation : false,
 	    	// navigationText : true,
 	    	pagination : false,
-	    	items: 5,	    
-	    	autoPlay:5000,	
-	    });    
+	    	items: 5,
+	    	autoPlay:5000,
+	    });
 
 	}
 
@@ -183,30 +183,30 @@ jQuery(document).ready(function() {
 			easing:'easeInOutQuart',
 			offset: -navHeight+10
 		});
-		
+
 	}
 
 });
 
 
 jQuery(window).load(function(){
-	
+
 	//chart
 	pieChart();
 
-	 // Detect Safari  
+	 // Detect Safari
 
     var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
     if (isSafari) $('html').addClass('is-safari');
 
-    
+
     //flexslider
 	if (jQuery().flexslider) {
 		//var $mainSlider = jQuery('#mainslider');
 		jQuery("#mainslider .flexslider").flexslider({
 			animation: "fade",
 			useCSS: true,
-			controlNav: true,   
+			controlNav: true,
 			directionNav: false,
 		    prevText: "",
 		    nextText: "",
@@ -242,7 +242,7 @@ jQuery(window).load(function(){
 		jQuery(".flexslider").flexslider({
 			animation: "fade",
 			useCSS: true,
-			controlNav: true,   
+			controlNav: true,
 			directionNav: false,
 		    prevText: "",
 		    nextText: "",
@@ -273,8 +273,8 @@ jQuery(window).load(function(){
 			bottom: 0
 		}
 	});
-	
-	
+
+
 
 	//preloader
 	jQuery(".preloaderimg").fadeOut();
@@ -285,7 +285,7 @@ jQuery(window).load(function(){
 	jQuery('body').delay(1000).scrollspy('refresh');
 
 
-	
+
 	//animation to elements on scroll
 	if (jQuery().appear) {
 		// jQuery('.to_animate').appear().css({opacity: 0});
@@ -328,7 +328,7 @@ jQuery(window).load(function(){
 				} else {
 					jQuery(this).countTo().addClass('counted');
 				}
-				
+
 			});
 		});
 	}
@@ -338,7 +338,7 @@ jQuery(window).load(function(){
 	// use http://idgettr.com/ to find your ID
 	if (jQuery().jflickrfeed) {
 		jQuery("#flickr").jflickrfeed({
-			flickrbase: "http://api.flickr.com/services/feeds/",
+			flickrbase: "https://api.flickr.com/services/feeds/",
 			limit: 9,
 			qstrings: {
 				id: "63512867@N07"
@@ -349,7 +349,7 @@ jQuery(window).load(function(){
 				hook: 'data-gal',
 				theme: 'facebook'
 	   		});
-	   		jQuery("#flickr li").hover(function () {						 
+	   		jQuery("#flickr li").hover(function () {
 			   jQuery(this).find("img").stop().animate({ opacity: 0.5 }, 200);
 		    }, function() {
 			   jQuery(this).find("img").stop().animate({ opacity: 1.0 }, 400);
@@ -363,7 +363,7 @@ jQuery(window).resize(function(){
 
 	jQuery('body').scrollspy('refresh');
 	jQuery("#header_wrapper").css({height: jQuery('#header').outerHeight(true)}); //editing header wrapper height for smooth stick and unstick
-	
+
 });
 
 jQuery(window).scroll(function() {
@@ -382,7 +382,7 @@ jQuery(window).scroll(function() {
 //DELETE FOLLOWING CODE TO DISABLE SWITCHER//
 /////////////////////////////////////////////
 jQuery(window).load(function(){
-		
+
 		var switcherHTML = '<div id="switcher">';
 		switcherHTML +=    '<span class="glyphicon glyphicon-cog"></span>';
 		switcherHTML +=    '<h6>Colors</h6>';
