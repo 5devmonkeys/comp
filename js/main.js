@@ -276,13 +276,7 @@ jQuery(window).load(function(){
 
 
 
-	//preloader
-	jQuery(".preloaderimg").fadeOut();
-	jQuery(".preloader").delay(200).fadeOut("slow").delay(200, function(){
-		jQuery(this).remove();
-	});
-
-	jQuery('body').delay(1000).scrollspy('refresh');
+	
 
 
 
