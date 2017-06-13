@@ -115,10 +115,6 @@ jQuery(document).ready(function() {
 		jQuery('#header').toggleClass('mobile-active');
 	});
 
-	//toTop
-	if (jQuery().UItoTop) {
-        jQuery().UItoTop({ easingType: 'easeOutQuart' });
-    }
 
 	//parallax
 	if (jQuery().parallax) {
@@ -276,7 +272,7 @@ jQuery(window).load(function(){
 
 
 
-	
+
 
 
 
