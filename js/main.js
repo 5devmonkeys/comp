@@ -64,8 +64,6 @@ jQuery(document).ready(function() {
         })
     });
 
-
-
     //mailchimp subscribe form processing
     jQuery('#signup').on('submit', function( e ) {
         e.preventDefault();
@@ -100,6 +98,7 @@ jQuery(document).ready(function() {
 
 
 	//mainmenu
+
 	if (jQuery().superfish) {
 		jQuery('ul.sf-menu').superfish({
 			delay:       300,
@@ -115,6 +114,11 @@ jQuery(document).ready(function() {
 		jQuery('#header').toggleClass('mobile-active');
 	});
 
+	//hightlight
+	$('.nav_highlight').click(function( e ) {
+		$('.nav_highlight').removeClass('active');
+		$(this).addClass('active');
+	});
 
 	//parallax
 	if (jQuery().parallax) {
@@ -127,7 +131,7 @@ jQuery(document).ready(function() {
     if (jQuery().prettyPhoto) {
 	   	jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
 	   		hook: 'data-gal',
-			theme: 'facebook' /* light_rounded / dark_rounded / light_square / dark_square / facebook / pp_default*/
+			theme: 'light_rounded' /* light_rounded / dark_rounded / light_square / dark_square / facebook / pp_default*/
 	  	});
 	}
 
