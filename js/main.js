@@ -114,12 +114,6 @@ jQuery(document).ready(function() {
 		jQuery('#header').toggleClass('mobile-active');
 	});
 
-	//hightlight
-	$('.nav_highlight').click(function( e ) {
-		$('.nav_highlight').removeClass('active');
-		$(this).addClass('active');
-	});
-
 	//parallax
 	if (jQuery().parallax) {
 		jQuery('#testimonials').parallax("50% 50%", 0.001);
