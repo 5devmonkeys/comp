@@ -39,9 +39,9 @@ jQuery(document).ready(function() {
 	///////////
 		//highlight
 		var number_of_pages = 7;
-		for (var index_highlight = 0; index_highlight < number_of_pages; index_highlight++){
-			if ($('#highlight_page_id').text() == index_highlight){
-				$('#highlight_index'+index_highlight).addClass('active');
+		for (var highlight_position = 0; highlight_position < number_of_pages; highlight_position++){
+			if ($('#highlight_page_id').text() == highlight_position){
+				$('#highlight_index'+highlight_position).addClass('active');
 			}
 		};
 
