@@ -37,6 +37,14 @@ jQuery(document).ready(function() {
 	///////////
 	//Plugins//
 	///////////
+		//highlight
+		var number_of_pages = 7;
+		for (var index_highlight = 0; index_highlight < number_of_pages; index_highlight++){
+			if ($('#highlight_page_id').text() == index_highlight){
+				$('#highlight_index'+index_highlight).addClass('active');
+			}
+		};
+
     //contact form processing
     jQuery('form.contact-form').on('submit', function( e ){
         e.preventDefault();
