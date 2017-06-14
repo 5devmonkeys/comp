@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
 	//Plugins//
 	///////////
 		//highlight
-		var number_of_pages = 7;
+		var number_of_pages = 6;
 		for (var highlight_position = 0; highlight_position < number_of_pages; highlight_position++){
 			if ($('#highlight_page_id').text() == highlight_position){
 				$('#highlight_index'+highlight_position).addClass('active');
