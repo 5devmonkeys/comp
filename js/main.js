@@ -212,7 +212,7 @@ jQuery(window).load(function(){
 			directionNav: false,
 		    prevText: "",
 		    nextText: "",
-			smoothHeight: false,
+			smoothHeight: true,
 			slideshowSpeed:8000,
 			animationSpeed:300,
 			start: function( slider ) {
