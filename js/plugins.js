@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
         // filter items when filter link is clicked
         jQuery('#timetable_filter a').on('click', function(e){
             e.preventDefault();
-            var $timetable = jQuery('#timetable');
+            var $timetable = jQuery('.timetable');
             var selector = jQuery(this).attr('data-filter');
             if ( jQuery(this).hasClass('selected') ) {
               // return false;
