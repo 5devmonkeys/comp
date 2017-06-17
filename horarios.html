@@ -25,7 +25,7 @@ layout: default
 
     <section id="middle" class="light_section last_content_section">
         <div class="container">
-          {% if site.ferias? %}
+          {% if site.vacations_time? %}
             <div class="row">
                  <header class="section_header text-center">
                     <h2>Horários dos cursos de férias</h2>
@@ -45,7 +45,7 @@ layout: default
                     <div class="clearfix"></div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
@@ -523,7 +523,7 @@ layout: default
                     <h2>Horários dos cursos regulares</h2>
                 </header>
             </div>
-            {% if site.ferias? == false %}
+            {% if site.vacations_time? == false %}
             <div class="row">
                 <div class="text-center filters col-sm-12">
                     <ul id="timetable_filter">
