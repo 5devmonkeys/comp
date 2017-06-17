@@ -16,3 +16,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+# settings
+
+ferias?: true

@@ -25,11 +25,14 @@ layout: default
 
     <section id="middle" class="light_section last_content_section">
         <div class="container">
+          {% if site.ferias? %}
             <div class="row">
                  <header class="section_header text-center">
                     <h2>Horários dos cursos de férias</h2>
                 </header>
             </div>
+
+
             <div class="row">
                 <div class="text-center filters col-sm-12">
                     <ul id="timetable_filter">
@@ -42,6 +45,7 @@ layout: default
                     <div class="clearfix"></div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
@@ -510,7 +514,7 @@ layout: default
                 </div>
             </div>
         </div>
-
+      {% endif %}
 
 
         <div class="container">
@@ -519,7 +523,20 @@ layout: default
                     <h2>Horários dos cursos regulares</h2>
                 </header>
             </div>
-
+            {% if site.ferias? == false %}
+            <div class="row">
+                <div class="text-center filters col-sm-12">
+                    <ul id="timetable_filter">
+                        <li><a class="selected" data-filter="all" href="#">Todas</a></li>
+                        <li><a data-filter=".Ballet" href="#" class="">Ballet</a></li>
+                        <li><a data-filter=".Hip-Hop" href="#" class="">Hip-Hop</a></li>
+                        <li><a data-filter=".Jazz" href="#" class="">Jazz</a></li>
+                        <li><a data-filter=".Latin" href="#" class="">Latin</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            {% endif %}
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
