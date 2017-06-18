@@ -2,7 +2,11 @@
     <div class="container text-center">
         <div class="row">
             <header class="section_header text-center">
+              {% if page.title %}
               <a href="horarios.html"><h2>Veja aqui nossos horários de {{ page.title }}</h2></a>
+              {% else %}
+              <a href="contato.html"><h2>Venha nos visitar para ter a sua melhor experiência de dança</h2></a>
+              {% endif %}
             </header>
         </div>
     </div>
