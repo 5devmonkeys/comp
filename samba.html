@@ -2,6 +2,7 @@
 layout: default
 pre_footer_text: Veja aqui nossos horários de Samba
 pre_footer_link: horarios
+name_id: Samba
 ---
 
 
@@ -11,14 +12,14 @@ pre_footer_link: horarios
       <div class="container">
           <div class="row">
               <div class="col-md-8">
-                  <h1 class="hs-line">Samba</h1>
+                  <h1 class="hs-line">{{ page.name_id }}</h1>
                   <div class="hs-line-des">
                       Time de coreografos incríveis &amp;&nbsp;ótimas pessoass
                   </div>
               </div>
               <div class="col-md-4 mt-30">
                   <div class="mod-breadcrumbs">
-                      <a href="index.html">Principal</a>&nbsp;/&nbsp;<a href="#">Cursos</a>&nbsp;/&nbsp;<span>Samba</span>
+                      <a href="index.html">Principal</a>&nbsp;/&nbsp;<a href="#">Cursos</a>&nbsp;/&nbsp;<span>{{ page.name_id }}</span>
                   </div>
               </div>
           </div>
@@ -41,7 +42,7 @@ pre_footer_link: horarios
             <img alt="" src="img/dances/samba_1.jpg">
           </div>
           <h2 class="entry-title">
-            <a href="./#" rel="bookmark">Samba</a>
+            <a href="./#" rel="bookmark">{{ page.name_id }}</a>
           </h2>
           <!-- .entry-meta -->
         </header>
