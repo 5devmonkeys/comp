@@ -5915,3 +5915,7 @@ article.comment-body {
 .margin_logo_top {
   margin-top: 0.2cm;
 }
+
+.margin_top_body {
+  margin-top: 20px;
+}
