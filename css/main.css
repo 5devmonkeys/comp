@@ -378,6 +378,10 @@ section > .container {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+section > .container_index {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
 
 .darkgrey_section + .darkgrey_section > .container,
 .dark_section + .dark_section > .container,
@@ -5918,4 +5922,12 @@ article.comment-body {
 
 .margin_top_body {
   margin-top: 20px;
+}
+
+.margin_top_header {
+  margin-top: 10px;
+}
+
+.change_distance {
+  margin-top: -50px
 }
