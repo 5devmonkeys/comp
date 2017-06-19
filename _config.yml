@@ -1,11 +1,11 @@
 
 title: Compassos - Stúdio de Dança
-email: your-email@domain.com
 description: >
 baseurl: "/comp"
 url: "https://heirian.github.io"
-twitter_username:
-github_username:
+phone_number: (62) 3286 -7624
+email: studiocompassos@gmail.com
+address: Rua C-116, Quadra 220 lote 1 número 569, Setor Jardim américa, Goiânia, Goiás.
 
 # Build settings
 markdown: kramdown
