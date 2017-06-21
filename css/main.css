@@ -511,7 +511,7 @@ blockquote,
   margin: 20px 0;
   padding: 16px 16px 16px 30px;
   line-height: 1.6;
-  border-left: 5px solid #f36639;
+  border-left: 5px solid #b31414;
   font-style: italic;
 }
 
@@ -5804,7 +5804,7 @@ article.comment-body {
 }
 
 .blog-single .entry-title a:hover {
-  color: #f36639;
+  color: #b31414;
 }
 
 .blog-single .metas .the-comments a, .blog-single .metas .the-date a, .blog-single .metas .the-author a {
