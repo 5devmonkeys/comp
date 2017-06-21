@@ -5066,19 +5066,19 @@ isotope animations
 }
 
 .features-content:hover h4:after {
-  background: #f36639;
+  background: #b31414;
 }
 
 .features-content:hover {
-  border-color: #f36639;
+  border-color: #b31414;
 }
 
 .features-content:hover .icon i {
-  color: #f36639;
+  color: #b31414;
 }
 
 .features-content:hover h4 {
-  color: #f36639;
+  color: #b31414;
 }
 
 .features-content:hover .theme_button {
