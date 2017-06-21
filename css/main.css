@@ -2559,7 +2559,7 @@ aside .widget a:hover {
     content: "\e602";
     background-color: transparent;
     font-size: 40px;
-    color: #4c4c4c;
+    color: #b31414;
     top: -8px;
     left: -5px;
   }
@@ -2605,7 +2605,7 @@ aside .widget a:hover {
   }
 
   .sf-menu > li > a:hover {
-    background: #f36639;
+    background: #b31414;
     color: #ffffff;
   }
 
@@ -2630,13 +2630,13 @@ aside .widget a:hover {
   /*top menu level*/
   .sf-arrows .sfHover > a,
   .sf-arrows .sfHover > a:hover {
-    color: #f36639;
+    color: #b31414;
     background-color: transparent;
-    border: 1px solid #f36639;
+    border: 1px solid #b31414;
   }
 
   .sf-menu li ul li:hover a {
-    background: #f36639;
+    background: #b31414;
     color: #ffffff;
   }
 }
