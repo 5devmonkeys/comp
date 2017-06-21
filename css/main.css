@@ -998,7 +998,7 @@ a > [class*="rt-icon-"],
 .light_section h4 a:hover,
 .light_section h5 a:hover,
 .light_section h6 a:hover {
-  color: #f36639;
+  color: #b31414;
 }
 .light_section a {
   color: #4c4c4c;
@@ -4649,8 +4649,8 @@ isotope portfolio
 }
 
 #isotope_filters a:hover {
-  background-color: #f36639;
-  border-color: #f36639;
+  background-color: #b31414;
+  border-color: #b31414;
   color: #ffffff;
 }
 
@@ -5543,12 +5543,12 @@ a.section-more:hover {
 
 #timetable_filter a:hover,
 #timetable_filter a.selected {
-  background-color: #f36639;
+  background-color: #b31414;
   color: #ffffff;
 }
 
 #timetable_filter a:hover {
-  background-color: #f36639;
+  background-color: #b31414;
 }
 
 .table-responsive .table a {
@@ -5562,7 +5562,7 @@ a.section-more:hover {
 
 .table-responsive .table a:hover {
   color: #ffffff;
-  background-color: #f36639;
+  background-color: #b31414;
 }
 
 .trainers h3 {
@@ -5631,7 +5631,7 @@ a.section-more:hover {
   color: #ffffff !important;
 }
 .classes h3 a:hover {
-  color: #4c4c4c;
+  color: #b31414;
 }
 
 .classes.media > .pull-left {
