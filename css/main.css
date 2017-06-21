@@ -5936,3 +5936,12 @@ article.comment-body {
 .change_distance {
   margin-top: -60px
 }
+
+#remove {
+  text-decoration: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
