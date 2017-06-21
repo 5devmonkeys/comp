@@ -806,8 +806,8 @@ a > [class*="rt-icon-"],
 .theme_button:hover,
 .theme_button:focus {
   color: #ffffff;
-  background-color: #f36639;
-  border-color: #f36639;
+  background-color: #b31414;
+  border-color: #b31414;
   opacity: 1;
   text-decoration: none;
   outline: none;
@@ -3348,7 +3348,7 @@ widget_pages
   height: 30px;
   padding: 8px 0 0 10px;
   width: 30px;
-  background: #f36639;
+  background: #b31414;
   border-radius: 100%;
   color: #ffffff;
 }
@@ -5779,7 +5779,7 @@ article.comment-body {
 }
 
 #contact .form-control::-webkit-input-placeholder {
-  color: #f36639;
+  color: #b31414;
 }
 
 /*blog single*/
