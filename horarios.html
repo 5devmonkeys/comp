@@ -1,5 +1,8 @@
 ---
 layout: default
+vacation_table: Horários dos cursos de férias
+vacation_first_table: Primeira quinzena do curso de férias
+vacation_second_table: Segunda quinzena do curso de férias
 ---
 
 
@@ -22,13 +25,14 @@ layout: default
             </div>
         </div>
 </section>
-
+{% if site.vacations_time? %}
     <section id="middle" class="light_section last_content_section">
         <div class="container">
-          {% if site.vacations_time? %}
+
             <div class="row">
                  <header class="section_header text-center">
-                    <h2>Horários dos cursos de férias</h2>
+                    <h2>{{ page.vacation_table }}</h2>
+                    <h3>{{ page.vacation_first_table }}</h3>
                 </header>
             </div>
 
@@ -514,29 +518,15 @@ layout: default
                 </div>
             </div>
         </div>
-      {% endif %}
 
 
         <div class="container">
             <div class="row">
                  <header class="section_header text-center">
-                    <h2>Horários dos cursos regulares</h2>
+                    <h3>{{ page.vacation_second_table }}</h3>
                 </header>
             </div>
-            {% if site.vacations_time? == false %}
-            <div class="row">
-                <div class="text-center filters col-sm-12">
-                    <ul id="timetable_filter">
-                        <li><a class="selected" data-filter="all" href="#">Todas</a></li>
-                        <li><a data-filter=".Ballet" href="#" class="">Ballet</a></li>
-                        <li><a data-filter=".Hip-Hop" href="#" class="">Hip-Hop</a></li>
-                        <li><a data-filter=".Jazz" href="#" class="">Jazz</a></li>
-                        <li><a data-filter=".Latin" href="#" class="">Latin</a></li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            {% endif %}
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="table-responsive">
@@ -1006,3 +996,499 @@ layout: default
             </div>
         </div>
   </section>
+{% endif %}
+
+{% if site.vacations_time? == false %}
+<section id="middle" class="light_section last_content_section">
+    <div class="container">
+
+        <div class="row">
+             <header class="section_header text-center">
+                <h2>Horários dos cursos de férias</h2>
+            </header>
+        </div>
+
+
+        <div class="row">
+            <div class="text-center filters col-sm-12">
+                <ul id="timetable_filter">
+                    <li><a class="selected" data-filter="all" href="#">Todas</a></li>
+                    <li><a data-filter=".Ballet" href="#" class="">Ballet</a></li>
+                    <li><a data-filter=".Hip-Hop" href="#" class="">Hip-Hop</a></li>
+                    <li><a data-filter=".Jazz" href="#" class="">Jazz</a></li>
+                    <li><a data-filter=".Latin" href="#" class="">Latin</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered timetable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Segunda</th>
+                                <th>Terça</th>
+                                <th>Quarta</th>
+                                <th>Quinta</th>
+                                <th>Sexta</th>
+                                <th>Sábado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>8:00 - 9:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>9:00 - 10:00</th>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>10:00 - 11:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>11:00 - 12:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>12:00 - 13:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>13:00 - 14:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>14:00 - 15:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>15:00 - 16:00</th>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>16:00 - 17:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <th>17:00 - 18:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <th>18:00 - 19:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Ballet">
+                                        Ballet
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <th>19:00 - 20:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Hip-Hop">
+                                        Hip-Hop
+                                    </a>
+                                </td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <th>20:00 - 21:00</th>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Latin">
+                                        Latin
+                                    </a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="./class-single.html" class="Jazz">
+                                        Jazz
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+{% endif %}
