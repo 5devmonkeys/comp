@@ -2423,13 +2423,13 @@ aside .widget a:hover {
   .sf-menu > li > a:hover,
   .sf-menu > li.active > a {
     background: transparent;
-    color: #f36639;
-    border-bottom: 3px solid #f36639;
+    color: #b31414;
+    border-bottom: 3px solid #b31414;
   }
 
   .sf-menu ul a:hover {
-    color: #4c4c4c;
-    background-color: #f36639;
+    color: #b31414;
+    background-color: #b31414;
   }
 
   .sf-menu li ul {
