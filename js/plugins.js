@@ -33,12 +33,32 @@ jQuery(document).ready(function() {
 
     //timetable
         var all_selectors = [];
+        var hasduplicate = false;
         // filter items when filter link is clicked
         jQuery('#timetable_filter a').on('click', function(e){
             e.preventDefault();
             var $timetable = jQuery('.timetable');
             var selector = jQuery(this).attr('data-filter');
-            all_selectors.push(selector);
+
+            for(var index_of_selectors = 0; index_of_selectors < all_selectors.length; index_of_selectors++){
+              if(all_selectors[ index_of_selectors ] === selector){
+                hasduplicate = true;
+
+              }
+            }
+
+            if (hasduplicate === true) {
+              var index = all_selectors.indexOf(selector);
+              if (index > -1) {
+              all_selectors.splice(index, 1);
+              }
+              hasduplicate = false
+            } else {
+              all_selectors.push(selector);
+            }
+
+
+
             if ( jQuery(this).hasClass('selected') ) {
 
                 jQuery(this).removeClass('selected');
@@ -60,6 +80,9 @@ jQuery(document).ready(function() {
                 $timetable.find('a').stop().animate({opacity: 1}, {queue: false}, 400);
                 all_selectors = [];
 
+            } else if (all_selectors.length == 0) {
+                $timetable.find('a').stop().animate({opacity: 1}, {queue: false}, 400);
+                jQuery('#all_filters').addClass('selected');
             } else {
                 $timetable.find('a').stop().animate({opacity: 0}, {queue: false}, 500);
                 for(var haveselector = 0; haveselector < all_selectors.length; haveselector++){
