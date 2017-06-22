@@ -5195,7 +5195,7 @@ a.section-more:hover {
 }
 
 #team .team_desc:hover {
-  background: #f36639;
+  background: #b31414;
 }
 
 #team .team_desc:hover h4, #team .team_desc:hover p {
@@ -5203,13 +5203,13 @@ a.section-more:hover {
 }
 
 #team .color {
-  color: #f36639;
+  color: #b31414;
 }
 
 #team .caption {
   padding-left: 20px;
   padding-bottom: 1px;
-  border-bottom: 3px solid #f36639;
+  border-bottom: 3px solid #b31414;
 }
 
 /*price*/
@@ -5931,6 +5931,10 @@ article.comment-body {
 
 .margin_top_header {
   margin-top: 10px;
+}
+
+.margin_img_sobre {
+  margin-top: 30px;
 }
 
 .change_distance {
