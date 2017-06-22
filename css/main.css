@@ -5937,6 +5937,10 @@ article.comment-body {
   margin-top: -60px
 }
 
+.change_distance_table {
+  margin-top: -120px
+}
+
 #remove {
   text-decoration: none;
   -webkit-transition: none;
@@ -5957,6 +5961,6 @@ article.comment-body {
 .text_sobre_desc {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 400px;
   margin-top: 30px;
 }
