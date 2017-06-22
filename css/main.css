@@ -5194,13 +5194,9 @@ a.section-more:hover {
   opacity: 0.8;
 }
 
-#team .team_desc:hover {
-  background: #b31414;
-}
 
-#team .team_desc:hover h4, #team .team_desc:hover p {
-  color: #ffffff;
-}
+
+
 
 #team .color {
   color: #b31414;
@@ -5948,4 +5944,19 @@ article.comment-body {
   -o-transition: none;
   -ms-transition: none;
   transition: none;
+}
+
+.img_resize {
+  display: block;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.text_sobre_desc {
+  display: block;
+  margin: auto;
+  width: 50%;
+  margin-top: 30px;
 }
