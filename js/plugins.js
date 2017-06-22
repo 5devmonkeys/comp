@@ -36,20 +36,30 @@ jQuery(document).ready(function() {
         // filter items when filter link is clicked
         jQuery('#timetable_filter a').on('click', function(e){
             e.preventDefault();
-
             var $timetable = jQuery('.timetable');
             var selector = jQuery(this).attr('data-filter');
             all_selectors.push(selector);
             if ( jQuery(this).hasClass('selected') ) {
+
+                jQuery(this).removeClass('selected');
+
+            } else if( selector === 'all'){
+
                 jQuery(this).parent().parent().find('a').removeClass('selected');
+                jQuery('#all_filters').addClass('selected');
 
             } else {
 
                 jQuery(this).addClass('selected');
+                jQuery('#all_filters').removeClass('selected');
+
             }
+
             if (selector === 'all') {
+
                 $timetable.find('a').stop().animate({opacity: 1}, {queue: false}, 400);
                 all_selectors = [];
+
             } else {
                 $timetable.find('a').stop().animate({opacity: 0}, {queue: false}, 500);
                 for(var haveselector = 0; haveselector < all_selectors.length; haveselector++){
