@@ -5949,8 +5949,8 @@ article.comment-body {
 .img_resize {
   display: block;
   margin: auto;
-  height: 50%;
-  width: 50%;
+  height: 360px;
+  width: 567px;
   margin-top: 30px;
 }
 
