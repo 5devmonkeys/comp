@@ -5926,7 +5926,7 @@ article.comment-body {
 }
 
 .margin_top_sucess {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -5940,6 +5940,10 @@ article.comment-body {
 
 .change_distance {
   margin-top: -60px
+}
+
+.change_distance_mainslider {
+  margin-top: -20px
 }
 
 .change_distance_table {

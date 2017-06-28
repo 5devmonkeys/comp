@@ -79,6 +79,7 @@ jQuery(document).ready(function() {
 
 		if (emailSucess == 'true'){
 				$('#email-condition').removeClass('hidden');
+				$('#mainslider').addClass('change_distance_mainslider')
 		}
 
 		//refineURI
