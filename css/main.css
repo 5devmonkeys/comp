@@ -1037,7 +1037,7 @@ a > [class*="rt-icon-"],
   color: #4c4c4c;
 }
 .grey_section a:hover {
-  color: #f36639;
+  color: #b31414;
 }
 .grey_section .theme_button {
   color: #4c4c4c;
@@ -3344,17 +3344,18 @@ widget_pages
 
 /*contact-info*/
 .social-mid i {
-  font-size: 14px;
-  height: 30px;
-  padding: 8px 0 0 10px;
-  width: 30px;
+  font-size: 30px;
+  height: 60px;
+  padding: 15px 0px 5px 18px;
+  width: 60px;
   background: #b31414;
   border-radius: 100%;
   color: #ffffff;
 }
 
 .social-mid a:hover i {
-  color: #1a1a1a;
+  background: #ffffff;
+  color: #b31414;
 }
 
 /*
