@@ -5925,6 +5925,11 @@ article.comment-body {
   margin-top: 20px;
 }
 
+.margin_top_sucess {
+  margin-top: 40px;
+  text-align: center;
+}
+
 .margin_top_header {
   margin-top: 10px;
 }

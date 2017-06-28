@@ -47,7 +47,7 @@ jQuery(document).ready(function() {
 
     //contact form processing
     jQuery('form.contact-form').on('submit', function( e ){
-        e.preventDefault();
+
         var $form = jQuery(this);
         jQuery($form).find('span.contact-form-respond').remove();
         //checking on empty values
@@ -61,16 +61,43 @@ jQuery(document).ready(function() {
         if ($form.find('[name]').hasClass('invalid')) {
         	return;
         };
-        //sending form data to PHP server if fields are not empty
-        var request = $form.serialize();
-        var ajax = jQuery.post( "contact-form.php", request )
-            .done(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">'+data+'</span>');
-        })
-            .fail(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">Mail cannot be sent. You need PHP server to send mail.</span>');
-        })
+
     });
+
+		//get url Parameter to show e-mail was sending
+		function getParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+
+		var emailSucess = getParameterByName('emailSucess');
+
+		if (emailSucess == 'true'){
+				$('#email-condition').removeClass('hidden');
+		}
+
+		//refineURI
+		var myNewURI = refineURI();
+
+		window.history.pushState("object or string", "Title", "/" + myNewURI );
+
+   	function refineURI() {
+    //get full URI
+    	var currURI= window.location.href; //get current address
+    // ****** get the URI between what's after '/' and befor '?'
+    //1- get URI after'/'
+    	var afterDomain= currURI.substring(currURI.lastIndexOf('/') + 1);
+    //2- get the part before '?'
+    	var beforeQueryString= afterDomain.split("?")[0];
+
+    	return beforeQueryString;
+		}
+
 
     //mailchimp subscribe form processing
     jQuery('#signup').on('submit', function( e ) {

@@ -54,23 +54,23 @@ layout: default
                 <header class="section_header">
                     <h2>Formulário de contato</h2>
                 </header>
-                <form method="POST" action="https://simple-form.com/me@kaiomagalhaes.com">
+                <form class="contact-form" method="POST" action="https://simple-form.com/me@kaiomagalhaes.com">
                     <p class="contact-form-name">
-                        <input type="text" name="name" class="form-control" placeholder="Nome" />
+                        <input aria-required="true" type="text" name="name" class="form-control" placeholder="Nome" />
                     </p>
                     <p class="contact-form-email">
-			                  <input type="email" name="replyTo" class="form-control" placeholder="Email" />
+			                  <input aria-required="true" type="email" name="replyTo" class="form-control" placeholder="Email" />
                     </p>
                     <p class="contact-form-subject">
-                        <input type="text" name="subject" class="form-control" placeholder="Assunto" />
+                        <input aria-required="true" type="text" name="subject" class="form-control" placeholder="Assunto" />
                     </p>
                     <p class="contact-form-message">
-			                  <textarea rows="8" cols="45" name="message" class="form-control" placeholder="Mensagem"></textarea>
+			                  <textarea aria-required="true" rows="8" cols="45" name="message" class="form-control" placeholder="Mensagem"></textarea>
                     </p>
                     <p class="contact-form-submit vertical-margin-40">
 			                  <input type="submit" class="theme_button" value="Enviar" />
                     </p>
-                    <!--<input type="hidden" name="redirectURL" value="http://www.studiocompassos.com/contato" />-->
+                    <input type="hidden" name="redirectURL" value ="http://www.studiocompassos.com/?emailSucess=true"/>
 		            </form>
                 <!--
                 <form class="contact-form" method="post" action="/">
