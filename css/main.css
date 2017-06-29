@@ -31,7 +31,6 @@ f
   - Easy pieChart
   - toTop
   - Isotope Portfolio
-
 */
 /*
 **bootstrap overrides
@@ -4105,7 +4104,7 @@ html[xmlns] .slides {
   width: 18px;
   height: 18px;
   display: block;
-  background: #ffffff;
+  background-color: transparent;
   border: 2px solid #ffffff;
   cursor: pointer;
   text-indent: -9999px;
@@ -4116,11 +4115,11 @@ html[xmlns] .slides {
 }
 
 .flex-control-paging li a:hover {
-  background-color: transparent;
+  background: #ffffff;
 }
 
 .flex-control-paging li a.flex-active {
-  background-color: transparent;
+  background: #ffffff;
 }
 
 .flex-control-thumbs {
@@ -5512,7 +5511,7 @@ a.section-more:hover {
   color: #ffffff;
 }
 .mod-breadcrumbs a:hover {
-  color: #f36639;
+  color: #b31414;
 }
 
 /*timetable*/
