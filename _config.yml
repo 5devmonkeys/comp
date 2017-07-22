@@ -1,6 +1,6 @@
 
 title: Compassos - Stúdio de Dança
-description: 
+description:
 baseurl: ""
 url: "http://www.studiocompassos.com"
 phone_number: (62) 3286 - 7624
@@ -19,4 +19,4 @@ exclude:
 
 # settings
 
-vacations_time?: true
+vacations_time?: false

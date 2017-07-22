@@ -1,19 +1,22 @@
 ---
 layout: default
-vacation_table: Horários dos cursos de férias • Julho/2017
-vacation_first_table: Primeira quinzena do curso de férias
-vacation_second_table: Segunda quinzena do curso de férias
-dance_zouk_I: Zouk iniciante
-dance_zouk_II: Zouk intermediário
-dance_forro_I: Forró iniciante
-dance_forro_II: Forró intermediário
-dance_tango_I: Tango iniciante
-dance_tango_II: Tango intermediário
-dance_samba_I: Samba iniciante
-dance_samba_II: Samba intermediário
-dance_salsa_I: Salsa iniciante &amp; Cha cha cha
-musical_teory_I: Teoria musical I
-musical_teory_II: Teoria musical II
+street_dance: Street Dance
+danca_salao: Dança de Salão Iniciado
+zouk: Zouk Iniciado
+salsa_bachata: Salsa &amp; Bachata
+danca_salao_int: Dança de Salão Iniciante
+zouk_inter: Zouk Intermediário
+forro_samba: Forro &amp; Samba Iniciante
+samba_inter: Samba Intermediário
+ioga: Ioga
+salsa_linha: Salsa em linha
+forro_int: Forró Iniciante
+forro_sert_inter: Forro &amp; Sertanejo Intermediário
+tango_inter: Tango Intermediário
+zouk_int: Zouk Iniciante
+samba_bole: Samba &amp; Bolero Intermediário
+bachata: Bachata Iniciado
+samba_zouk: Zouk &amp; Samba Iniciante
 ---
 
 
@@ -677,19 +680,31 @@ musical_teory_II: Teoria musical II
 
         <div class="row">
              <header class="section_header text-center">
-                <h2>Horários dos cursos regulares</h2>
+                <h2>Turmas regulares</h2>
             </header>
         </div>
-
 
         <div class="row">
             <div class="text-center filters col-sm-12">
                 <ul id="timetable_filter">
-                    <li><a class="selected" data-filter="all" href="#">Todas</a></li>
-                    <li><a data-filter=".Ballet" href="#" class="">Ballet</a></li>
-                    <li><a data-filter=".Hip-Hop" href="#" class="">Hip-Hop</a></li>
-                    <li><a data-filter=".Jazz" href="#" class="">Jazz</a></li>
-                    <li><a data-filter=".Latin" href="#" class="">Latin</a></li>
+                    <li><a class="selected" data-filter="all" href="#" id="all_filters">Todas</a></li>
+                    <li><a data-filter=".street_dance" href="#" class="">{{ page.street_dance }}</a></li>
+                    <li><a data-filter=".danca_salao" href="#" class="">{{ page.danca_salao }}</a></li>
+                    <li><a data-filter=".danca_salao_int" href="#" class="">{{ page.danca_salao_int }}</a></li>
+                    <li><a data-filter=".zouk" href="#" class="">{{ page.zouk }}</a></li>
+                    <li><a data-filter=".zouk_int" href="#" class="">{{ page.zouk_int }}</a></li>
+                    <li><a data-filter=".zouk_inter" href="#" class="">{{ page.zouk_inter }}</a></li>
+                    <li><a data-filter=".samba_zouk" href="#" class="">{{ page.samba_zouk }}</a></li>
+                    <li><a data-filter=".samba_inter" href="#" class="">{{ page.samba_inter }}</a></li>
+                    <li><a data-filter=".samba_bole" href="#" class="">{{ page.samba_bole }}</a></li>
+                    <li><a data-filter=".forro_samba" href="#" class="">{{ page.forro_samba }}</a></li>
+                    <li><a data-filter=".forro_int" href="#" class="">{{ page.forro_int }}</a></li>
+                    <li><a data-filter=".forro_sert_inter" href="#" class="">{{ page.forro_sert_inter }}</a></li>
+                    <li><a data-filter=".tango_inter" href="#" class="">{{ page.tango_inter }}</a></li>
+                    <li><a data-filter=".salsa_linha" href="#" class="">{{ page.salsa_linha }}</a></li>
+                    <li><a data-filter=".salsa_bachata" href="#" class="">{{ page.salsa_bachata }}</a></li>
+                    <li><a data-filter=".bachata" href="#" class="">{{ page.bachata }}</a></li>
+                    <li><a data-filter=".ioga" href="#" class="">{{ page.ioga }}</a></li>
                 </ul>
                 <div class="clearfix"></div>
             </div>
@@ -713,446 +728,173 @@ musical_teory_II: Teoria musical II
                         </thead>
                         <tbody>
                             <tr>
-                                <th>8:00 - 9:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
+                                <th>10h30</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>9:00 - 10:00</th>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
+                                <th>15h</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="ioga">{{ page.ioga }}</a></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>10:00 - 11:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
+                                <th>16h30</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="street_dance">{{ page.street_dance }}</a></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>11:00 - 12:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
+                                <th>17h30</th>
+                                <td></td>
+                                <td><a href="#" class="ioga">{{ page.ioga }}</a></td>
+                                <td></td>
+                                <td><a href="#" class="ioga">{{ page.ioga }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>12:00 - 13:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
+                                <th>19h</th>
+                                <td><a href="#" class="street_dance">{{ page.street_dance }}</a></td>
+                                <td><a href="#" class="ioga">{{ page.ioga }}</a></td>
+                                <td><a href="#" class="street_dance">{{ page.street_dance }}</a></td>
+                                <td><a href="#" class="ioga">{{ page.ioga }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>13:00 - 14:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
+                                <th>19h</th>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
+                                <td><a href="forro" class="forro_int">{{ page.forro_int }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>14:00 - 15:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
+                                <th>19h</th>
+                                <td><a href="zouk" class="zouk">{{ page.zouk }}</a></td>
+                                <td><a href="salsa" class="salsa_linha">{{ page.salsa_linha }}</a></td>
+                                <td><a href="zouk" class="zouk">{{ page.zouk }}</a></td>
+                                <td><a href="salsa" class="salsa_linha">{{ page.salsa_linha }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
 
                             <tr>
-                                <th>15:00 - 16:00</th>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>16:00 - 17:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
+                                <th>19h</th>
+                                <td><a href="salsa" class="salsa_bachata">{{ page.salsa_bachata }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td><a href="salsa" class="salsa_bachata">{{ page.salsa_bachata }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                             </tr>
 
 
                             <tr>
-                                <th>17:00 - 18:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
+                                <th>20h</th>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td><a href="forro" class="forro_sert_inter">{{ page.forro_sert_inter }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao_int">{{ page.danca_salao_int }}</a></td>
+                                <td><a href="forro" class="forro_sert_inter">{{ page.forro_sert_inter }}</a></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                             </tr>
 
 
                             <tr>
-                                <th>18:00 - 19:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Ballet">
-                                        Ballet
-                                    </a>
-                                </td>
+                                <th>20h</th>
+                                <td><a href="zouk" class="zouk_inter">{{ page.zouk_inter }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
+                                <td><a href="zouk" class="zouk_inter">{{ page.zouk_inter }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
                                 <td></td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
                                 <td></td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
                                 <td></td>
                             </tr>
 
 
                             <tr>
-                                <th>19:00 - 20:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Hip-Hop">
-                                        Hip-Hop
-                                    </a>
-                                </td>
+                                <th>20h</th>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
+                                <td><a href="tango" class="tango_inter">{{ page.tango_inter }}</a></td>
+                                <td><a href="dança-de-salão" class="danca_salao">{{ page.danca_salao }}</a></td>
+                                <td><a href="tango" class="tango_inter">{{ page.tango_inter }}</a></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                             </tr>
 
 
                             <tr>
-                                <th>20:00 - 21:00</th>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Latin">
-                                        Latin
-                                    </a>
-                                </td>
-                                <td>
+                                <th>20h</th>
+                                <td></td>
+                                <td><a href="zouk" class="zouk_int">{{ page.zouk_int }}</a></td>
+                                <td></td>
+                                <td><a href="zouk" class="zouk_int">{{ page.zouk_int }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
 
-                                </td>
-                                <td>
-                                    <a href="./class-single.html" class="Jazz">
-                                        Jazz
-                                    </a>
-                                </td>
+
+                            <tr>
+                                <th>21h</th>
+                                <td><a href="forro" class="forro_samba">{{ page.forro_samba }}</a></td>
+                                <td><a href="samba" class="samba_bole">{{ page.samba_bole }}</a></td>
+                                <td><a href="samba" class="forro_samba">{{ page.forro_samba }}</a></td>
+                                <td><a href="samba" class="samba_bole">{{ page.samba_bole }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <th>21h</th>
+                                <td><a href="samba" class="samba_inter">{{ page.samba_inter }}</a></td>
+                                <td><a href="bachata" class="bachata">{{ page.bachata }}</a></td>
+                                <td><a href="samba" class="samba_inter">{{ page.samba_inter }}</a></td>
+                                <td><a href="bachata" class="bachata">{{ page.bachata }}</a></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <th>21h</th>
+                                <td></td>
+                                <td><a href="samba" class="samba_zouk">{{ page.samba_zouk }}</a></td>
+                                <td></td>
+                                <td><a href="zouk" class="samba_zouk">{{ page.samba_zouk }}</a></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
